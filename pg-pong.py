@@ -1,5 +1,5 @@
 #-*- coding: utf-8 -*-
-""" Kapathy의 DL 코드를 실행해보고 코드 이해가 어려운 중요 부분에 설명을 추가 하였음. 
+""" Kapathy의 RL 코드를 실행해보고 코드 이해가 어려운 중요 부분에 설명을 추가 하였음. 
     2016/07 by funmv """
 """ 학습 초기에는 대부분 agent가 패함. 대략 맥북에서 이틀 정도 학습하니 agent가 이기는 경우가 나타나기 시작하였음 """
 """ Trains an agent with (stochastic) Policy Gradients on Pong. Uses OpenAI Gym. """
@@ -13,7 +13,7 @@ batch_size = 10 # every how many episodes to do a param update?
 learning_rate = 1e-4
 gamma = 0.99 # discount factor for reward
 decay_rate = 0.99 # decay factor for RMSProp leaky sum of grad^2
-resume = True # resume from previous checkpoint?
+resume = False # resume from previous checkpoint?
 render = False
 
 # model initialization
